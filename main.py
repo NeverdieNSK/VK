@@ -13,10 +13,6 @@ button = driver.find_element_by_id('index_login_button')
 button.click()
 driver.implicitly_wait(10)
 time.sleep(5)
-ID = driver.find_element_by_css_selector('#ts_input')
-ID.send_keys(secret.IDFr)
-
-#IDFr = (secret.IDFr)
-#Search = id ts_input
+driver.get('https://vk.com/' + secret.IDFr)
 
 
